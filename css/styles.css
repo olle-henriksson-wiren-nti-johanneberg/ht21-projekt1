@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    min-height: 50vh;
+    display: grid;
+    border: solid 1px black;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'mn mn mn nv'
+    'mn mn mn nv'
+    'ft ft ft ft';
+    grid-template-rows: 4em 10em 10em 4em;
+    grid-template-columns: 1fr 1fr 1fr 8em;
+
+}
+header, main, nav, footer { /* Justera alla delar */
+    padding: 1em;
+}
+header {
+    border: solid 1px black;
+    display: flex;
+    grid-area: hd;
+    justify-content: space-around;
+}
+
+main {
+    grid-area: mn;
+}
+
+nav {
+    border: solid 1px black;
+    grid-area: nv;
+}
+
+footer {
+    grid-area: ft;
+}
