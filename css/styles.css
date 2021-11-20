@@ -34,11 +34,25 @@ main {
     flex-direction: row;
 }
 #main_sq1 {
+    display: flex;
+    background-image: url(../img/zebrameat.jpg);
+    background-size: cover;
+    margin-left: 3em;
     padding: 1em;
-    width: 50vw;
+    width: 25vw;
     border: solid black 1px;
+    justify-content: flex-end;
+    flex-flow: column;
 }
-
+#sq1_textbox1 {
+    padding-top: 1em;
+    text-align: center;
+    align-self: flex-end;
+    height: 10vh;
+    width: 15vw;
+    background-color: yellow;
+    border-radius: 0.5em;
+}
 
 nav {
     border: solid 1px black;
