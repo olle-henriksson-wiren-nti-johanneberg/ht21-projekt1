@@ -11,7 +11,7 @@
     'mn mn mn nv'
     'mn mn mn nv'
     'ft ft ft ft';
-    grid-template-rows: 4em 10em 10em 4em;
+    grid-template-rows: 6em 10em 10em 4em;
     grid-template-columns: 1fr 1fr 1fr 8em;
 
 }
@@ -22,12 +22,23 @@ header {
     border: solid 1px black;
     display: flex;
     grid-area: hd;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+#logotype {
+    width: 4em;
 }
 
 main {
     grid-area: mn;
+    display: flex;
+    flex-direction: row;
 }
+#main_sq1 {
+    padding: 1em;
+    width: 50vw;
+    border: solid black 1px;
+}
+
 
 nav {
     border: solid 1px black;
