@@ -1,9 +1,13 @@
 * {
     box-sizing: border-box;
 }
-
+body {
+font-family: lemonde-courrier, serif;
+font-weight: 400;
+font-style: normal;
+}
 #wrapper {
-    min-height: 50vh;
+    min-height: 100vh;
     display: grid;
     border: solid 1px black;
     grid-template-areas: 
@@ -11,7 +15,7 @@
     'mn mn mn nv'
     'mn mn mn nv'
     'ft ft ft ft';
-    grid-template-rows: 6em 10em 10em 4em;
+    grid-template-rows: 6em auto auto 1fr;
     grid-template-columns: 1fr 1fr 1fr 8em;
 
 }
@@ -31,7 +35,8 @@ header {
 main {
     grid-area: mn;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 2em;
 }
 #main_sq1 {
     display: flex;
@@ -40,25 +45,38 @@ main {
     margin-left: 3em;
     padding: 1em;
     width: 25vw;
-    border: solid black 1px;
+    min-height: 25vh;
     justify-content: flex-end;
     flex-flow: column;
 }
-#sq1_textbox1 {
-    padding-top: 1em;
-    text-align: center;
-    align-self: flex-end;
-    height: 10vh;
-    width: 15vw;
-    background-color: yellow;
-    border-radius: 0.5em;
+#main2
+{
+    background-color: greenyellow;
 }
+#main_sq2 {
+    margin-left: 35em;
+    background-image: url(../img/Burger_Unsplash.jpg);
+    background-size: cover;
+    width: 25vw;
+    min-height: 25vh;
+}
+
 
 nav {
     border: solid 1px black;
     grid-area: nv;
 }
+#nav_list {
+    display: flex;
+    flex-direction: column;
+   
 
+}
+hr {
+    width: 3em;
+    color: gray;
+    opacity: 0.5;
+}
 footer {
     grid-area: ft;
 }
