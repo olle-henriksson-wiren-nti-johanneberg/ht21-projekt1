@@ -34,40 +34,33 @@ header {
 }
 
 main {
-    padding: 1em;
     grid-area: mn;
     display: flex;
     flex-direction: column;
     gap: 8em;
 }
-#main1_sq1_header{
-    margin-top: -3em;
+#h2_popular { /* Header 2 med "Populärt" */
+    text-align: center;
+}
+#zebrameat { /* Img av zebra köttet */
+    width: 20em;
 }
 #main_sq1 {
-    display: flex;
-    background-image: url(../img/zebrameat.jpg);
-    background-size: cover;
-    margin-left: 3em;
     width: 20vw;
-    min-height: 30vh;
-    justify-content: flex-end;
-    flex-flow: column;
+    margin-left: 3em;
     margin-bottom: 1em;
     margin-top: 1em;
-    border-radius: 0.33em;
 }
 #main2
-{
+{ /* Bakgrundsfärg på ruta 2*/
     background: rgb(187, 156, 109); 
   
 }
-#main_sq2 {
-    margin-left: 35em;
-    background-image: url(../img/Burger_Unsplash.jpg);
-    background-size: cover;
-    width: 15vw;
-    min-height: 25vh;
-    border-radius: 0.33em;
+#burger {
+    margin-left: 70vw;
+    width: 20em;
+}
+#main_sq2 { /* Används för att trycka ner bilden lite på ruta 2*/
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -88,5 +81,6 @@ hr {
     opacity: 0.5;
 }
 footer {
+    background-color: black;
     grid-area: ft;
 }
