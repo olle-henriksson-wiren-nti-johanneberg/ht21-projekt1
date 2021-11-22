@@ -1,28 +1,31 @@
 * {
     box-sizing: border-box;
 }
-
+body {
+    margin: 0%;
+    font-family: lemonde-courrier, serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(255, 251, 240);
+}
 #wrapper {
-    min-height: 50vh;
+    min-height: 100vh;
     display: grid;
-    border: solid 1px black;
     grid-template-areas: 
     'hd hd hd hd'
     'mn mn mn nv'
     'mn mn mn nv'
     'ft ft ft ft';
-    grid-template-rows: 6em 10em 10em 4em;
+    grid-template-rows: 6em auto auto auto;
     grid-template-columns: 1fr 1fr 1fr 8em;
-
-}
-header, main, nav, footer { /* Justera alla delar */
-    padding: 1em;
 }
 header {
-    border: solid 1px black;
+    padding: 1em;
+    background-color: rgb(233, 233, 233);
     display: flex;
     grid-area: hd;
     justify-content: space-between;
+    filter: drop-shadow(.3rem .3rem 1rem rgb(0, 0, 0))
 }
 #logotype {
     width: 4em;
@@ -31,34 +34,61 @@ header {
 main {
     grid-area: mn;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 8em;
+}
+#h2_popular { /* Header 2 med "Populärt" */
+    text-align: center;
+}
+#zebrameat { /* Img av zebra köttet */
+    width: 20em;
+    filter: drop-shadow(.3rem .3rem 1rem rgb(0, 0, 0));
+    
+}
+#main1 {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 41%, rgba(187,156,109,1) 100%); 
+}
+#main1_header {
+    padding-left: 1em;
 }
 #main_sq1 {
-    display: flex;
-    background-image: url(../img/zebrameat.jpg);
-    background-size: cover;
-    margin-left: 3em;
-    padding: 1em;
-    width: 25vw;
-    border: solid black 1px;
-    justify-content: flex-end;
-    flex-flow: column;
+    width: 20vw;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
-#sq1_textbox1 {
-    padding-top: 1em;
-    text-align: center;
-    align-self: flex-end;
-    height: 10vh;
-    width: 15vw;
-    background-color: yellow;
-    border-radius: 0.5em;
+#main2
+{ /* Bakgrundsfärg på ruta 2*/
+    background: rgb(187, 156, 109); 
+  
+}
+#burger {
+    margin-left: 70vw;
+    width: 20em;
+}
+#main_sq2 { /* Används för att trycka ner bilden lite på ruta 2*/
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 nav {
+    background-color: white;
     border: solid 1px black;
     grid-area: nv;
 }
+#nav_list {
+    display: flex;
+    flex-direction: column;
+   
 
+}
+hr {
+    width: 3em;
+    color: gray;
+    opacity: 0.5;
+}
 footer {
+    background-color: black;
     grid-area: ft;
 }
