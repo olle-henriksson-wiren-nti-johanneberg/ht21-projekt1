@@ -35,7 +35,6 @@ main {
     grid-area: mn;
     display: flex;
     flex-direction: column;
-    gap: 8em;
 }
 #h2_popular { /* Header 2 med "Populärt" */
     text-align: center;
@@ -46,25 +45,34 @@ main {
     
 }
 #main1 {
+    display: flex;
+    justify-content: space-around;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0) 41%, rgba(187,156,109,1) 100%); 
 }
 #main1_header {
     padding-left: 1em;
 }
-#main_sq1 {
+#main1_sq1{
+    padding: 5em;
+    text-overflow: ellipsis;
+}
+#main1_sq2 {
     width: 20vw;
-    margin-left: 1em;
-    margin-bottom: 1em;
-    margin-top: 1em;
+}
+#main1_sq3 {
+    width: 30em;
 }
 #main2
 { /* Bakgrundsfärg på ruta 2*/
-    background: rgb(187, 156, 109); 
+    padding: 1em;
+    background: rgb(187, 156, 109);
+    display: flex;
+    justify-content: flex-end;
   
 }
 #burger {
-    margin-left: 70vw;
+    margin-left: 20em;
     width: 20em;
 }
 #main_sq2 { /* Används för att trycka ner bilden lite på ruta 2*/
@@ -80,8 +88,7 @@ nav {
 #nav_list {
     display: flex;
     flex-direction: column;
-   
-
+    list-style-type: none;
 }
 hr {
     width: 3em;
