@@ -30,7 +30,6 @@ header {
 #logotype {
     width: 4em;
 }
-
 main {
     grid-area: mn;
     display: flex;
@@ -43,7 +42,7 @@ main {
     width: 20em;
     margin-right: 5em;
 }
-#main1 {
+#main1_1 {
     display: flex;
     justify-content: space-around;
     background: rgb(255,255,255);
@@ -53,19 +52,20 @@ main {
     text-align: end;
     padding-left: 1em;
 }
-#main1_sq1{ /*Texten, main 1*/
+#main1_sq1_1{ /*Texten, main 1*/
     margin-left: 40vw;
     padding: 5em;
     text-overflow: ellipsis;
 }
-#main1_sq2 { /* Bild på Zebra */
+#main1_sq2_1 { /* Bild på Zebra */
     padding-top: 1em;
     padding-bottom: 1em;
 }
-#main1_sq3 {
+#main1_sq3_1 {
     width: 30em;
 }
-#main2
+/*Main del2*/
+#main2_1
 { /* Bakgrundsfärg på ruta 2*/
     padding: 1em;
     background-color: #F5D8AE;
@@ -77,16 +77,26 @@ main {
     margin-left: 5em;
     width: 20em;
 }
-#main2_sq1{ /*Texten, main2*/
+#main2_sq1_1{ /*Texten, main2*/
     padding: 2em;
 }
-#main2_sq2 { /* Används för att trycka ihop bilden lite på ruta 2*/
+#main2_sq2_1 { /* Används för att trycka ihop bilden lite på ruta 2*/
     margin-top: 1em;
     margin-bottom: 1em;
 }
-#main2_sq3 { /* Whitespace */
+#main2_sq3_1 { /* Whitespace */
     margin-right: 50vw; /*För att trycka in texten*/
 }
+/* Main del3 */
+#main3_sq1_1 {
+    border: 1px solid black;
+}
+#book_online_img {
+    padding: 3em;
+    margin-left: 6em;
+    width: 35%;
+}
+
 nav {
     background-color: white;
     border: solid 1px black;
