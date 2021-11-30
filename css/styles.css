@@ -12,12 +12,12 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-areas: 
-    'hd hd hd hd'
-    'mn mn mn nv'
-    'mn mn mn nv'
-    'ft ft ft ft';
+    'hd hd hd'
+    'mn mn mn'
+    'mn mn mn'
+    'ft ft ft';
     grid-template-rows: 6em auto auto auto;
-    grid-template-columns: 1fr 1fr 1fr 0.33fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 header {
     padding: 1em;
@@ -103,6 +103,15 @@ hr {
     opacity: 0.5;
 }
 footer {
+    color: white;
     background-color: black;
     grid-area: ft;
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+    column-gap: 4em;
+}
+ul {
+    list-style-type: none;
+
 }
