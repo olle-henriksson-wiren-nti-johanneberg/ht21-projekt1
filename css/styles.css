@@ -1,6 +1,25 @@
 * {
     box-sizing: border-box;
 }
+
+.main3_1_lasmer:hover {
+    color: white;
+}
+
+#book_online_img, #home_delivery_img, #zebrameat, #burger { /*Fade in när disan laddas in*/
+    animation-name: FadeInOpacity;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    filter: drop-shadow(.3rem .3rem 1rem rgb(0, 0, 0));
+}
+@keyframes FadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 body {
     margin: 0%;
     font-family: lemonde-courrier, serif;
@@ -25,7 +44,7 @@ header {
     display: flex;
     grid-area: hd;
     justify-content: space-between;
-    filter: drop-shadow(.3rem .3rem 1rem rgb(0, 0, 0))
+    filter: drop-shadow(.3rem .3rem 1rem rgb(0, 0, 0));
 }
 #logotype {
     width: 4em;
@@ -111,9 +130,13 @@ main {
     text-align: center;
     margin-bottom: 2em;
 }
-.main3_1_lasmer { /*Läs mer delen under bilderna på main3 */
+.main3_1_lasmer {
+    display: inline-block;
     background-color: #F5D8AE;
-    padding-left: 8em;
+    padding: 1em;
+    border-radius: 0.33em;
+    
+
 }
 nav {
     background-color: white;
