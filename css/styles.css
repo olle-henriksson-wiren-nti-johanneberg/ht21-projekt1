@@ -1,12 +1,19 @@
 * {
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 
 .main3_1_lasmer:hover {
+    animation-name: FadeInOpacity;
+    animation-timing-function: ease-in;
+    animation-duration: 0.33s;
     color: white;
 }
 
-#book_online_img, #home_delivery_img, #zebrameat, #burger { /*Fade in när disan laddas in*/
+img{ /*Fade in när disan laddas in*/
     animation-name: FadeInOpacity;
     animation-timing-function: ease-in;
     animation-duration: 3s;
