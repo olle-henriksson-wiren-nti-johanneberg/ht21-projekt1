@@ -29,6 +29,7 @@ body {
 }
 #wrapper {
     min-height: 100vh;
+    min-width: 90vw;
     display: grid;
     grid-template-areas: 
     'hd hd hd'
@@ -42,11 +43,21 @@ header {
     padding: 1em;
     background-color: rgb(233, 233, 233);
     display: flex;
+    flex-direction: row;
     grid-area: hd;
     justify-content: space-between;
+    border-top: 0.3em solid #D9B189;
     filter: drop-shadow(.3rem .3rem 1rem rgb(0, 0, 0));
 }
+#headerlist {
+    flex-direction: row;
+    display: flex;
+}
+#headerlist li {
+    padding-left: 10em;
+}
 #logotype {
+    margin-left: 1em;
     width: 4em;
 }
 main {
@@ -67,10 +78,7 @@ main {
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0) 41%, rgba(187,156,109,1) 100%); 
 }
-#main1_header {
-    text-align: end;
-    padding-left: 1em;
-}
+
 #main1_sq1_1{ /*Texten, main 1*/
     margin-left: 40vw;
     padding: 5em;
@@ -163,5 +171,4 @@ footer {
 }
 ul {
     list-style-type: none;
-
 }
