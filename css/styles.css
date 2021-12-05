@@ -197,3 +197,32 @@ footer {
 ul {
     list-style-type: none;
 }
+
+/* Sida 2 / Meny */
+
+#wrapper2 {
+    display: grid;
+    grid-template-areas: 
+    'hd hd'
+    'mn mn'
+    'mn mn'
+    'ft ft';
+    grid-template-rows: 6em auto auto auto;
+    grid-template-columns: 50% 50%;
+}
+
+#main1_2 {
+
+    display: grid;
+    grid-template-areas: 
+    'mnsq1_2 mnsq2_2';
+    text-align: center;
+}
+#main1_sq1_2 {
+    grid-area: mnsq1_2;
+    border-right: black solid 1px;
+}
+#main1_sq2_2 {
+    border-left: black solid 1px;
+    grid-area: mnsq2_2;
+}
