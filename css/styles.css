@@ -217,6 +217,7 @@ ul {
     grid-template-areas: 
     'mnsq1_2 mnsq2_2';
     text-align: center;
+    grid-template-columns: 50% 50%;
 }
 #main1_sq1_2 {
     grid-area: mnsq1_2;
