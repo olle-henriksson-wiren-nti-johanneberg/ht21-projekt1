@@ -12,7 +12,7 @@ header li a:hover { /* När man höverar header länkar */
     animation-timing-function: ease-in;
     animation-duration: 0.2s;
     padding-bottom: 2.2em;
-    color: white;
+    color: RGB(217,177,137);
 }
 
 .main3_1_lasmer:hover {
@@ -212,18 +212,22 @@ ul {
 }
 
 #main1_2 {
-
     display: grid;
     grid-template-areas: 
     'mnsq1_2 mnsq2_2';
     text-align: center;
+    word-break: break-all;
     grid-template-columns: 50% 50%;
 }
-#main1_sq1_2 {
+#main1_sq1_2 { /* Huvudrätter */
     grid-area: mnsq1_2;
     border-right: black solid 1px;
 }
-#main1_sq2_2 {
+#main1_sq2_2 { /* Förrätter */
     border-left: black solid 1px;
     grid-area: mnsq2_2;
+}
+#gillmenburger { /* Bild på maträtten */
+    width: 15%;
+    float:inline-start;
 }
