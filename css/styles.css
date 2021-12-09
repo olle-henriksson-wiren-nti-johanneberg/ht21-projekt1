@@ -220,6 +220,7 @@ ul {
     grid-template-columns: 50% 50%;
 }
 #main1_sq1_2 { /* Huvudrätter */
+    text-align: center;
     grid-area: mnsq1_2;
     border-right: black solid 1px;
 }
@@ -228,6 +229,7 @@ ul {
     grid-area: mnsq2_2;
 }
 #gillmenburger { /* Bild på maträtten */
-    width: 15%;
-    float:inline-start;
+    width: 30%;
+    float: right;
+    margin-right: 1em;
 }
