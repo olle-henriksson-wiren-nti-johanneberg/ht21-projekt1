@@ -1,11 +1,18 @@
 * {
     box-sizing: border-box;
 }
-a {
+a { /* Links */
     text-decoration: none;
     color: black;
 }
-
+/* Footer links */
+footer a { 
+    color: white;
+}
+footer a:hover {
+    color: #F5D8AE;
+}
+ /* Header links */
 header li a:hover { /* När man höverar header länkar */
     border-bottom: solid 0.33em black;
     animation-name: UnderLineA;
@@ -229,7 +236,16 @@ ul {
     grid-area: mnsq2_2;
 }
 #gillmenburger { /* Bild på maträtten */
-    width: 30%;
-    float: right;
-    margin-right: 1em;
+    width: 50%;
+    align-items: center;
+
+}
+#chicknugg {
+    width: 70%;
+    margin-right: 5em;
+}
+#meny_img {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
 }
