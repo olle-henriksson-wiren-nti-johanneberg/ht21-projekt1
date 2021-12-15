@@ -97,9 +97,7 @@ main {
     display: flex;
     flex-direction: column;
 }
-#h2_popular { /* Header 2 med "Populärt" */
-    text-align: center;
-}
+
 #zebrameat { /* Img av zebra köttet */
     width: 100%;
     margin-right: 5em;
@@ -248,4 +246,29 @@ ul {
     margin-top: 2em;
     display: flex;
     flex-direction: row;
+}
+
+/* Sida 3 / Om Oss */
+#wrapper3 {
+    display: grid;
+    grid-template-areas: 
+    'hd hd hd'
+    'mn mn mn'
+    'ft ft ft';
+    grid-template-rows: 6em auto 10em;
+    grid-template-columns: auto auto;
+    min-height: 100vh;
+}
+
+#main1_3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main1_sq1_3 { /* Ruta 1 */
+    align-self: flex-start;
+    border:solid;
+    padding: 2em;
+
 }
