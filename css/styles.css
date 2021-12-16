@@ -146,20 +146,25 @@ main {
 #main3_1 {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
-#main3_sq1_1 {
+#main3_sq1_1 { /* Vänsterdelen av boxen*/
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+#main3_sq2_1 { /* Högerdelen av boxen */
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
 
-}
-#home_delivery_img { /*Bild på main3*/
-    padding: 3em;  
-    margin-left: 6em; 
-    width: 70%;
+#home_delivery_img { /*Högerbild på main3 */
+    padding: 3em;
     padding-bottom: 0em;
 }
-#book_online_img { /*Vänsterbild på main3*/
-    padding: 3em;
-    margin-left: 6em;
-    width: 70%;
+#book_online_img { /*Vänsterbild på main3 */
+    padding: 3em;  
     padding-bottom: 0em;
 }
 #main3_sq1_1_textbox,#main3_sq2_1_textbox { /* Text ruta till vänsterbilden, main3*/
