@@ -112,7 +112,6 @@ main {
 #main1_sq1_1{ /*Texten, main 1*/
     margin-left: 40vw;
     padding: 5em;
-    text-overflow: ellipsis;
 }
 #main1_sq2_1 { /* Bild på Zebra */
     margin-top: 3em;
@@ -263,12 +262,32 @@ ul {
 #main1_3 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: space-between;
 }
 #main1_sq1_3 { /* Ruta 1 */
     align-self: flex-start;
-    border:solid;
-    padding: 2em;
+    padding-left: 5em;
+    padding-top: 1em;
+}
+#main1_sq1_3 p {
+    line-height: 0em;
 
+}
+
+#main2_sq1_3 { /* Bildbox */
+    display: block;
+    background-image: url(../img/om_oss_bg.jpg);
+    padding-left: 50vw;
+    padding-right: 50vw;   /* ^ Bestämmer Size V*/
+    padding-bottom: 40vh;
+    background-size: cover;
+}
+
+#main3_sq1_3 {
+    text-align: right;
+}
+#main3_sq1_3 p {
+    line-height: 0em;
+    padding-right: 5em;
 }
